@@ -9,9 +9,9 @@ export class Main extends sQuery.virtual {
       sq('#myresult').val(newtext)
     })
   }
-  
-  // dom virtualization
-  virtualDOM(){
+ 
+  // we borrow react render style
+  render(){
     return(
       <div>
         <input s-id="myinput"></input>
@@ -19,7 +19,4 @@ export class Main extends sQuery.virtual {
       </div>
     )
   }
-  
-  // we borrow react render style
-  render(){virtualDOM()}
 }
